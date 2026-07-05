@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | SnackHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Analytics Dummy -->
+<script>
+console.log("Google Analytics Dummy Aktif");
+</script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🍿 SnackHub</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Keranjang</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section style="padding:40px 8%;">
+
+    <h2>Checkout</h2>
+
+    <br>
+
+    <form id="checkout-form">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Nama Lengkap"
+            required
+        >
+
+        <br><br>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        >
+
+        <br><br>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Nomor HP"
+            required
+        >
+
+        <br><br>
+
+        <textarea
+            id="address"
+            placeholder="Alamat Lengkap"
+            rows="5"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <select id="payment" required>
+
+            <option value="">Pilih Metode Pembayaran</option>
+
+            <option>Transfer Bank</option>
+
+            <option>E-Wallet</option>
+
+            <option>COD</option>
+
+        </select>
+
+        <br><br>
+
+        <h3 id="checkout-total"></h3>
+
+        <br>
+
+        <button class="btn">
+            Bayar Sekarang
+        </button>
+
+    </form>
+
+</section>
+
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
